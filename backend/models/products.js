@@ -11,6 +11,9 @@ const product = db.define('product', {
     img_url: {
         type: sequelize.STRING
     },
+    price: {
+        type: sequelize.FLOAT
+    },
 })
 
 module.exports = product;
