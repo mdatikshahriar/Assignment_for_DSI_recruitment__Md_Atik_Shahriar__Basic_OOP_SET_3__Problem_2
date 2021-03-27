@@ -1,0 +1,62 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+$color: #1f1f1f;
+
+body {
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+}
+
+.theme-light {
+  $color: #111111;
+
+  .app {
+    font-family: "Hind Siliguri", sans-serif;
+  }
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+.mm-product-card {
+  //height: 20rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Hind Siliguri", sans-serif;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease !important;
+  animation: yourAnimation 4s 1 0s ease !important;
+  min-height: 200px;
+
+  &:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+
+    .mm-card-image img {
+      transform: scale(1.2);
+    }
+  }
+
+  .mm-card-image {
+    height: 10rem;
+    background-color: #48abbf;
+    padding: 0px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .mm-card-content {
+    width: 100%;
+    padding: 10px;
+  }
+}
